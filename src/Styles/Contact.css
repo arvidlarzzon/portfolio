@@ -1,0 +1,24 @@
+.contact{
+    padding: 10vh 10vw;
+}
+
+input {
+    margin: 1vh;
+    width:100%;
+    height: 5vh;
+}
+textarea {
+    margin: 1vh;
+    width: 100%;
+    height: 30vh;
+}
+.mail-form {
+    display: table; 
+    margin: 1vh auto; 
+}
+.mail-form a{
+    margin: 0 2px; 
+    border-radius: 1vh;
+    padding: 15px;
+    background-color: gray;
+}

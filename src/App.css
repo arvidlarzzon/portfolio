@@ -7,13 +7,14 @@
 .App-header{
   display: block;
   box-sizing: border-box;
-  
   margin-bottom: 5px;
 }
 
 
 .content{
   padding: 2vh 2vw;
+  overflow: auto;
+  height: 55vh;
 }
 
 /* 

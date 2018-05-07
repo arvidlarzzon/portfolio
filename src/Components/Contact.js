@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
+import ReactContactForm from 'react-mail-form';
 
-//import '../Styles/Contact.css'
+import '../Styles/Contact.css'
 
 class Contact extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentView: 'projects',
-      views: ['About', 'Projects', 'Resumé', 'Contact'],
-
     };
     // Bind functions to this
   }
@@ -18,8 +16,8 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="Contact">
-        <div>Here's a contact form that sends emails to me</div>
+      <div className="contact">
+        <ReactContactForm buttonText="Send" contentsPlaceholder="What's on your mind?" titlePlaceholder="Subject..." className="mail-form" to="arvidlarzzon@hotmail.com" />
       </div>
     );
   }

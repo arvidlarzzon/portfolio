@@ -6,6 +6,12 @@ class Projects extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      projects: [
+        {id:1, name: 'Plot Twitch', link: 'https://infoviz-dh2321.firebaseapp.com', video: 'https://drive.google.com/open?id=1tvGS5ZQy-pZYNEGlVbxMWhyyRnsn89_U'},
+        {id:2, name: 'Plot Twitch', link: 'https://infoviz-dh2321.firebaseapp.com', video: null},
+        {id:3, name: 'Plot Twitch', link: 'https://infoviz-dh2321.firebaseapp.com', video: null},
+        {id:4, name: 'Plot Twitch', link: 'https://infoviz-dh2321.firebaseapp.com', video: null}
+      ]
     };
     // Bind functions to this
   }
@@ -14,9 +20,21 @@ class Projects extends Component {
   }
 
   render() {
+    let projectsToRender = null;
+
+    projectsToRender = this.state.projects.map((project) => {
+      return (
+        <div key={project.id} className="project-wrapper">
+          <h2>{project.name}</h2>
+          <a href={project.link}>Project Website</a>
+          <iframe title={project.name} src={project.video + "/preview"} width="640" height="480"></iframe>
+        </div>
+      )
+    })
     return (
       <div className="projects" >
         <h1>This is Projects</h1>
+        {projectsToRender}
       </div>
     );
   }

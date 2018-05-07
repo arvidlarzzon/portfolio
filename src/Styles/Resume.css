@@ -1,0 +1,21 @@
+.resume {
+    
+}
+.dl-pdf {
+    margin-left: 12vw;
+    background-color: rgb(59, 145, 62); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.5vw;
+}
+.dl-pdf:hover {
+    cursor: pointer;
+    background-color: rgb(68, 161, 71); /* Green */
+
+}
+i{
+    margin: 0 10px;
+}
