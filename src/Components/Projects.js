@@ -7,7 +7,7 @@ class Projects extends Component {
     super(props);
     this.state = {
       projects: [
-        {id:1, name: 'Plot Twitch', link: 'https://infoviz-dh2321.firebaseapp.com', video: 'https://drive.google.com/open?id=1tvGS5ZQy-pZYNEGlVbxMWhyyRnsn89_U'},
+        {id:1, name: 'Plot Twitch', link: 'https://infoviz-dh2321.firebaseapp.com', video: 'https://drive.google.com/file/d/1tvGS5ZQy-pZYNEGlVbxMWhyyRnsn89_U/preview'},
         {id:2, name: 'Plot Twitch', link: 'https://infoviz-dh2321.firebaseapp.com', video: null},
         {id:3, name: 'Plot Twitch', link: 'https://infoviz-dh2321.firebaseapp.com', video: null},
         {id:4, name: 'Plot Twitch', link: 'https://infoviz-dh2321.firebaseapp.com', video: null}
@@ -27,7 +27,11 @@ class Projects extends Component {
         <div key={project.id} className="project-wrapper">
           <h2>{project.name}</h2>
           <a href={project.link}>Project Website</a>
-          <iframe title={project.name} src={project.video + "/preview"} width="640" height="480"></iframe>
+          {project.video ? (
+          <iframe title={project.name} src={project.video} width="640" height="480"></iframe>
+          ) : (
+            <p>No video</p>
+          )}
         </div>
       )
     })
