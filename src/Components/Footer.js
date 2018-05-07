@@ -13,7 +13,7 @@ class Footer extends Component {
         return (
             <div className="App-footer">
                 <h1>This is Footer component</h1>
-                <p>More content</p>
+                <p>Some links to GitHub, LinkedIn, Facebook and instagram</p>
             </div>
         );
     }
