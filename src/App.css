@@ -1,0 +1,25 @@
+/*Positioning CSS in the .App class*/
+.App{
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.App-header{
+  display: block;
+  box-sizing: border-box;
+  
+  margin-bottom: 5px;
+}
+
+
+.content{
+  padding: 2vh 2vw;
+}
+
+/* 
+Att lägga till för mobil och små laptops 
+
+@media only screen and (max-width: 600px) {
+  
+}
+*/

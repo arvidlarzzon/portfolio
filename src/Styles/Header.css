@@ -1,0 +1,15 @@
+.profileImg {
+    margin-left: 10vw;
+    max-height: 20vh;
+    max-width: 20vw;
+    border-radius: 1vh;
+}
+
+.header-wrapper {
+    padding-top: 1vh;
+}
+
+.name-span {
+    margin-left: 3vw;
+    font-size: 7vw;
+}

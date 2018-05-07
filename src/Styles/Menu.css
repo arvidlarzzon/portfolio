@@ -1,0 +1,40 @@
+.menu {
+    display: table;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    table-layout: fixed;
+    background-color: rgb(182, 182, 182);
+    
+}
+.nav-link {
+    font-size: 2vw;
+    display: table-cell;
+    text-align: center;
+    padding: 5px;
+
+}
+.nav-link:hover {
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+a:visited {
+    color: rgb(0, 56, 70);
+}
+
+.current-view {
+    font-weight: bold;
+    background-color: white;
+    padding-bottom: -10px;
+}
+@media only screen and (max-width: 600px) {
+    .nav-link {
+        font-size: 4vw;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .nav-link {
+        font-size: 26px;
+    }
+}
