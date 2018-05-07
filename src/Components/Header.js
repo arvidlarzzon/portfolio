@@ -16,7 +16,7 @@ class Header extends Component {
     return (
         <div className="App-header">
           <div className="header-wrapper">
-            <img src='/jag.jpg' className="profileImg" alt="logo" />
+            <img src='public/jag.jpg' className="profileImg" alt="logo" />
             <span className="name-span">Arvid Larsson</span>
             {this.props.children /*This is the menu*/}
           </div>
