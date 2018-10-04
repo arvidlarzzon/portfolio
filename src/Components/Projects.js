@@ -1,21 +1,16 @@
 import React, { Component } from 'react';
 
-//import '../Styles/Projects.css'
+import projectFile from '../Constants/projectlist.js'
+import '../Styles/Projects.css'
 
 class Projects extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      projects: [
-        {id:1, name: 'Plot Twitch', link: 'https://infoviz-dh2321.firebaseapp.com', video: 'https://drive.google.com/file/d/1tvGS5ZQy-pZYNEGlVbxMWhyyRnsn89_U/preview'},
-        {id:2, name: 'Plot Twitch', link: 'https://infoviz-dh2321.firebaseapp.com', video: null},
-        {id:3, name: 'Plot Twitch', link: 'https://infoviz-dh2321.firebaseapp.com', video: null},
-        {id:4, name: 'Plot Twitch', link: 'https://infoviz-dh2321.firebaseapp.com', video: null}
-      ]
+      projects: projectFile,
     };
     // Bind functions to this
   }
-  
   componentDidMount () {
   }
 
@@ -25,19 +20,27 @@ class Projects extends Component {
     projectsToRender = this.state.projects.map((project) => {
       return (
         <div key={project.id} className="project-wrapper">
-          <h2>{project.name}</h2>
-          <a href={project.link}>Project Website</a>
-          {project.video ? (
-          <iframe title={project.name} src={project.video} width="640" height="480"></iframe>
-          ) : (
-            <p>No video</p>
-          )}
+          <div className="table-cell">
+            <h1>{project.name}</h1>
+            {project.link ? (
+              <a href={project.link}>Project Website</a>
+              ):(
+              <p>N/A</p>
+            )}
+            <p>{project.description}</p>
+          </div>
+          <div className="table-cell">
+            {project.video ? (
+            <iframe title={project.name} src={project.video} width={project.sizeW} height={project.sizeH} webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            ) : (
+              <p>No video</p>
+            )}
+          </div>
         </div>
       )
     })
     return (
       <div className="projects" >
-        <h1>This is Projects</h1>
         {projectsToRender}
       </div>
     );
