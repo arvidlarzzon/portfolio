@@ -17,21 +17,33 @@ class Projects extends Component {
     let projectsToRender = null;
 
     projectsToRender = this.state.projects.map(project => {
+      // let responsiveW;
+      // let responsiveH;
+      // console.log(project.sizeW);
+      // if (project.sizeW && project.sizeW > this.props.windowWidth) {
+      //   let aspectRatio = project.sizeH / project.sizeW;
+      //   responsiveH = this.props.windowWidth * aspectRatio;
+      //   responsiveW = this.props.windowWidth;
+      // }
+
       return (
         <div key={project.id} className="project-wrapper">
           <div className="project-item">
             <h1>{project.name}</h1>
-            {project.link ? <a href={project.link}>Project Website</a> : null}
-            <br />
+            {project.link ? (
+              <div>
+                <a href={project.link}>Project Website</a>{" "}
+              </div>
+            ) : null}
+
             {project.gitLink ? (
-              <a href={project.gitLink}>Project GitHub</a>
+              <div>
+                <a href={project.gitLink}>Project GitHub</a>
+              </div>
             ) : null}
             <p>{project.description}</p>
           </div>
-          <div
-            className="project-item"
-            style={project.sizeH ? { height: project.sizeH } : null}
-          >
+          <div className="project-video">
             {project.video ? (
               <iframe
                 title={project.name}
@@ -42,9 +54,7 @@ class Projects extends Component {
                 mozallowfullscreen="true"
                 allowFullScreen="true"
               />
-            ) : (
-              <p>No video</p>
-            )}
+            ) : null}
           </div>
         </div>
       );

@@ -23,9 +23,9 @@ class App extends Component {
   handleWindowResize() {
     this.setState({ windowWidth: window.innerWidth });
     if (this.state.windowWidth < 1000) {
-      this.setState({ collapsed: true });
+      this.setState({ collapsed: true, windowWidth: window.innerWidth });
     } else {
-      this.setState({ collapsed: false });
+      this.setState({ collapsed: false, windowWidth: window.innerWidth });
     }
   }
 

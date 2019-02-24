@@ -4,20 +4,24 @@
   flex-direction: column;
 }
 .project-wrapper {
-  box-sizing: border-box;
   display: flex;
   width: 100%;
+  flex: 0 0 auto;
 }
 .project-item {
-  box-sizing: border-box;
-  padding: 20px;
+  flex: 1;
+}
+.project-item > div {
+  margin-bottom: 10px;
+}
+.project-video {
   flex: 1;
 }
 @media only screen and (min-width: 1000px) {
-  .project-wrapper {
-    padding: 0 100px;
-  }
 }
 
 @media only screen and (max-width: 600px) {
+  .project-wrapper {
+    flex-direction: column;
+  }
 }
