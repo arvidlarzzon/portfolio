@@ -1,0 +1,66 @@
+.home {
+  width: 100%;
+}
+
+.summary-wrapper {
+  padding: 0 10vw;
+  display: flex;
+  justify-content: center;
+}
+.summary-wrapper > :nth-child(odd) {
+  background-color: rgba(231, 228, 206);
+}
+.summary-item {
+  flex: 1 0 30%;
+  padding: 20px 20px;
+  flex-wrap: wrap;
+}
+.summary-item > p {
+  font-family: "Calibri", sans-serif;
+}
+.dl-pdf {
+  background-color: rgb(59, 145, 62);
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+}
+.skills-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.skill {
+  display: flex;
+  flex: 1 0 15%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 100%;
+  margin: 5px;
+  align-self: baseline;
+  background-color: rgba(231, 228, 206);
+}
+.skill-img {
+  width: 50px;
+  max-width: 100%;
+  max-height: 50px;
+  border-radius: 50px;
+}
+.dl-form {
+  display: flex;
+  justify-content: center;
+}
+.resume-icon {
+  margin-top: -4px;
+}
+@media only screen and (max-width: 600px) {
+  .summary-wrapper {
+    margin-top: -2vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}

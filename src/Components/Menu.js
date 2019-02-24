@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
-
-import '../Styles/Menu.css'
+import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
+import { FaUser, FaHome, FaCode, FaPaperPlane } from "react-icons/lib/fa";
+import "../Styles/Menu.css";
 
 class Menu extends Component {
   constructor(props) {
@@ -9,41 +9,52 @@ class Menu extends Component {
     this.state = {
       collapsed: true,
       views: [
-        {name:'Home', route:'/'},
-        {name:'About', route:'/about'},
-        {name:'Projects', route:'/projects'},
-        {name:'Resumé', route: '/resume'},
-        {name:'Contact', route: '/contact'}
-      ],
-
+        {
+          name: "Home",
+          route: "/",
+          icon: <FaHome />
+        },
+        {
+          name: "About me",
+          route: "/about",
+          icon: <FaUser />
+        },
+        {
+          name: "Projects",
+          route: "/projects",
+          icon: <FaCode />
+        },
+        {
+          name: "Contact",
+          route: "/contact",
+          icon: <FaPaperPlane />
+        }
+      ]
     };
     // Bind functions to this
     this.toggleMenu = this.toggleMenu.bind(this);
   }
-  componentWillReceiveProps () {
-    this.setState({collapsed: this.props.collapsed})
-  }
-  componentWillMount () {
-    this.setState({collapsed: this.props.collapsed})
-    
-  }
-  toggleMenu(){
 
-  }
+  toggleMenu() {}
   render() {
     //const collapsed = this.state.collapsed;
 
-    let menuItems = this.state.views.map((view) =>
-    <NavLink key={view.name} exact to={view.route} className="nav-link" activeClassName="current-view">
-        {view.name}
-    </NavLink>
-    )
-    
-    return (
-      <div className="menu">
-        {menuItems}
-      </div>
-    );
+    let menuItems = this.state.views.map((view, index) => (
+      <NavLink
+        key={index}
+        exact
+        to={view.route}
+        className="nav-link"
+        activeClassName="current-view"
+      >
+        <div className="inner-menu-item">
+          {view.icon}
+          {view.name}
+        </div>
+      </NavLink>
+    ));
+
+    return <div className="menu">{menuItems}</div>;
   }
 }
 

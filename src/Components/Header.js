@@ -1,27 +1,28 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import profilePic from '../Assets/Jag.jpg';
-import '../Styles/Header.css'
+import profilePic from "../Assets/Jag.jpg";
+import "../Styles/Header.css";
+import Menu from "./Menu";
 
 class Header extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-    };
+    this.state = {};
     // Bind functions to this
   }
-  componentDidMount () {
-  }
-  
+  componentDidMount() {}
+
   render() {
     return (
-        <div className="App-header">
-          <div className="header-wrapper">
-            <img src={profilePic} className="profileImg" alt="logo" />
+      <div className="App-header">
+        <div className="header-wrapper">
+          <img src={profilePic} className="profileImg" alt="logo" />
+          <div className="menu-name-wrapper">
             <span className="name-span">Arvid Larsson</span>
-            {this.props.children /*This is the menu*/}
+            <Menu />
           </div>
         </div>
+      </div>
     );
   }
 }

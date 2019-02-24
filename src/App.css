@@ -1,20 +1,20 @@
 /*Positioning CSS in the .App class*/
-.App{
+.App {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
   height: 100vh;
   overflow: hidden;
 }
-.App-header{
+.App-header {
   display: block;
   box-sizing: border-box;
-  margin-bottom: 5px;
 }
-
-
-.content{
-  padding: 2vh 2vw;
+.content {
+  margin-bottom: 60px;
   overflow: auto;
-  height: 55vh;
+  display: inline-flex;
 }
 
 /* 
