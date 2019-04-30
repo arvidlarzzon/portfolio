@@ -2,5 +2,6 @@
 
 ## TODO
 
-- länkar i footer
-- Flytta navbar till header
+- Uppdatera projects sidan
+- Lägg till mailgun https://documentation.mailgun.com/en/latest/quickstart.html
+-

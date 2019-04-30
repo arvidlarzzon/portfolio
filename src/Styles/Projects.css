@@ -7,21 +7,29 @@
   display: flex;
   width: 100%;
   flex: 0 0 auto;
+  padding: 25px 200px;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
 }
 .project-item {
   flex: 1;
+  font-family: "Calibri", sans-serif;
+  box-sizing: border-box;
 }
 .project-item > div {
   margin-bottom: 10px;
 }
+.project-item p {
+  width: 50%;
+}
 .project-video {
   flex: 1;
 }
-@media only screen and (min-width: 1000px) {
-}
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   .project-wrapper {
     flex-direction: column;
   }
+}
+
+@media only screen and (max-width: 600px) {
 }
