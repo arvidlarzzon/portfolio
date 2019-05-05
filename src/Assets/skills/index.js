@@ -7,43 +7,48 @@ import node from "./node.png";
 import python from "./python.png";
 import react from "./react.png";
 import ux from "./ux.png";
+import css from "./css.png";
 
 export const mySkills = [
   {
     image: javascript,
-    description: "JavaScript"
+    description: "JavaScript",
   },
   {
     image: react,
-    description: "React"
+    description: "React",
   },
   {
     image: node,
-    description: "NodeJS"
+    description: "NodeJS",
   },
   {
     image: java,
-    description: "Java"
+    description: "Java",
   },
   {
     image: git,
-    description: "Git"
+    description: "Git",
   },
   {
     image: html,
-    description: "HTML"
+    description: "HTML",
+  },
+  {
+    image: css,
+    description: "CSS",
   },
   {
     image: firebase,
-    description: "Firebase"
+    description: "Firebase",
   },
 
   {
     image: python,
-    description: "Python"
+    description: "Python",
   },
   {
     image: ux,
-    description: "UX"
-  }
+    description: "UX",
+  },
 ];
