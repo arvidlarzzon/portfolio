@@ -14,9 +14,13 @@ class Home extends Component {
             <h3>About this app</h3>
             <p>
               Hi and welcome to my portfolio. <br />
-              For this website I've used Facebook's create-react-app framework and done the entire app from scratch.
+              For this website I've used Facebook's create-react-app framework
+              and done the entire app from scratch.
               <br />
-              I might not be the best designer but as long as someone tells me how they want something to look i can accomplish that.
+              I started making this project in my early days of React
+              development and would like to improve both architechture and style
+              as I get better at development, but rarely finds the time to do
+              so.
               <br />
               <br />I hope you find what you seek here.
             </p>
@@ -24,11 +28,11 @@ class Home extends Component {
           <div className="summary-item">
             <h3>Summary</h3>
             <p>
-              I usually call myself a web developer. My favorite technologies
-              are Node and React. But as long as I get an incentive to I love to
-              learn new technologies too, especially if they are written in
-              Javascript. Otherwise in my sparetime I like snowboarding, cooking, whine and whisky. 
-              Preferrably enjoyed with friends.
+              I call myself a web developer. My favorite technologies are Node
+              and React. But as long as I get an incentive to I love to learn
+              new technologies too, especially if they are written in
+              Javascript. Otherwise in my sparetime I like tennis, snowboarding,
+              cooking, wine and whisky. Preferrably enjoyed with friends.
             </p>
             <p>
               Checkout my resumé below or keep browsing the page if you are

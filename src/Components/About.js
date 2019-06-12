@@ -10,7 +10,7 @@ class About extends Component {
     super(props);
     this.state = {
       currentView: "projects",
-      views: ["About", "Projects", "Resumé", "Contact"]
+      views: ["About", "Projects", "Resumé", "Contact"],
     };
   }
 
@@ -26,7 +26,7 @@ class About extends Component {
               with web technologies and for making time go by i like to play
               computer games. This application is for example built with React.
               I know it's overkill for such a small application but it's a way
-              of displaying that i know some React.
+              of displaying that I know some React.
             </p>
             <p>
               One of my absolute favorite things to do is probably to have a
