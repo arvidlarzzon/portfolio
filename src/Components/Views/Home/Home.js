@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import myResume from "../Assets/Arvid-larsson-CV.pdf";
 import { FaFile, FaDownload } from "react-icons/lib/fa";
 
-import { mySkills } from "../Assets/skills";
+import { mySkills } from "../../../Assets/skills";
 import "../Styles/Home.css";
 
 class Home extends Component {

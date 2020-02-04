@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import profilePic from "../Assets/Jag.jpg";
 import "../Styles/Header.css";
-import Menu from "./Menu";
+import Menu from "../Menu";
 
 class Header extends Component {
   constructor(props) {
