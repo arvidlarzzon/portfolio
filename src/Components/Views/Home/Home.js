@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import myResume from "../Assets/Arvid-larsson-CV.pdf";
+import myResume from "Assets/Arvid-larsson-CV.pdf";
 import { FaFile, FaDownload } from "react-icons/lib/fa";
 
-import { mySkills } from "../../../Assets/skills";
-import "../Styles/Home.css";
+import { mySkills } from "Assets/skills";
+import "./Home.css";
 
 class Home extends Component {
   render() {

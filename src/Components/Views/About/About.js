@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
-import "../Styles/About.css";
-import dalarna from "../Assets/dalarna.jpg";
-import louise from "../Assets/louiseojag.jpg";
-import ischgl from "../Assets/ischgl.jpg";
+import "./About.css";
+import dalarna from "Assets/dalarna.jpg";
+import louise from "Assets/louiseojag.jpg";
+import ischgl from "Assets/ischgl.jpg";
 
 class About extends Component {
   constructor(props) {

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
-import projectFile from "../Constants/projectlist.js";
-import "../Styles/Projects.css";
+import projectFile from "Constants/projectlist.js";
+import "./Projects.css";
 
 class Projects extends Component {
   constructor(props) {

@@ -8,7 +8,7 @@ import {
 } from "react-icons/lib/fa";
 import EnvelopeIcon from "react-icons/lib/fa/envelope";
 
-import "../Styles/Footer.css";
+import "./Footer.css";
 
 class Footer extends Component {
   constructor(props) {

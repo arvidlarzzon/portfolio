@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import { FaUser, FaHome, FaCode, FaPaperPlane } from "react-icons/lib/fa";
-import "../Styles/Menu.css";
+import "./Menu.css";
 
 class Menu extends Component {
   constructor(props) {

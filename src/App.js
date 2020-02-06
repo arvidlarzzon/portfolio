@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
 
-import Header from "./Components/Header";
-import Home from "./Components/Home";
-import Footer from "./Components/Footer";
-import Projects from "./Components/Projects";
-import About from "./Components/About";
-import Contact from "./Components/Contact";
+import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
+
+import Home from "./Components/Views/Home/Home";
+import Projects from "./Components/Views/Projects/Projects";
+import About from "./Components/Views/About/About";
+import Contact from "./Components/Views/Contact/Contact";
 
 import "./App.css";
 
